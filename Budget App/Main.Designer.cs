@@ -98,7 +98,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 331);
+            this.label10.Location = new System.Drawing.Point(12, 297);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 9;
@@ -188,7 +188,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(12, 293);
+            this.label20.Location = new System.Drawing.Point(12, 271);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 13);
             this.label20.TabIndex = 19;
@@ -203,7 +203,7 @@
             // 
             // tbCreditTotal
             // 
-            this.tbCreditTotal.Location = new System.Drawing.Point(83, 331);
+            this.tbCreditTotal.Location = new System.Drawing.Point(76, 294);
             this.tbCreditTotal.Name = "tbCreditTotal";
             this.tbCreditTotal.ReadOnly = true;
             this.tbCreditTotal.Size = new System.Drawing.Size(100, 20);
@@ -274,7 +274,7 @@
             // 
             // tbHouseTotal
             // 
-            this.tbHouseTotal.Location = new System.Drawing.Point(83, 290);
+            this.tbHouseTotal.Location = new System.Drawing.Point(77, 268);
             this.tbHouseTotal.Name = "tbHouseTotal";
             this.tbHouseTotal.ReadOnly = true;
             this.tbHouseTotal.Size = new System.Drawing.Size(100, 20);
@@ -282,7 +282,7 @@
             // 
             // tbBillTotal
             // 
-            this.tbBillTotal.Location = new System.Drawing.Point(65, 415);
+            this.tbBillTotal.Location = new System.Drawing.Point(76, 346);
             this.tbBillTotal.Name = "tbBillTotal";
             this.tbBillTotal.ReadOnly = true;
             this.tbBillTotal.Size = new System.Drawing.Size(100, 20);
@@ -290,7 +290,7 @@
             // 
             // tbInsTotal
             // 
-            this.tbInsTotal.Location = new System.Drawing.Point(99, 360);
+            this.tbInsTotal.Location = new System.Drawing.Point(76, 320);
             this.tbInsTotal.Name = "tbInsTotal";
             this.tbInsTotal.ReadOnly = true;
             this.tbInsTotal.Size = new System.Drawing.Size(100, 20);
@@ -299,7 +299,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(12, 418);
+            this.label21.Location = new System.Drawing.Point(16, 349);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(47, 13);
             this.label21.TabIndex = 43;
@@ -308,11 +308,11 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(10, 363);
+            this.label22.Location = new System.Drawing.Point(15, 323);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(81, 13);
+            this.label22.Size = new System.Drawing.Size(48, 13);
             this.label22.TabIndex = 42;
-            this.label22.Text = "Insurance Total";
+            this.label22.Text = "Ins Total";
             // 
             // groupBox1
             // 

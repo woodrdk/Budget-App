@@ -59,7 +59,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbSewer = new System.Windows.Forms.TextBox();
             this.tbMortgage = new System.Windows.Forms.TextBox();
-            this.tbCarIns = new System.Windows.Forms.TextBox();
             this.tbTrash = new System.Windows.Forms.TextBox();
             this.tbWater = new System.Windows.Forms.TextBox();
             this.tbCable = new System.Windows.Forms.TextBox();
@@ -67,18 +66,20 @@
             this.tbElec = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tbCarIns = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
             this.tbIncTotal = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnBudget = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -118,18 +119,18 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(20, 42);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.Size = new System.Drawing.Size(38, 13);
             this.label12.TabIndex = 11;
-            this.label12.Text = "label12";
+            this.label12.Text = "Card 1";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(20, 68);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 12;
-            this.label13.Text = "label13";
+            this.label13.Text = "Card 2";
             // 
             // label14
             // 
@@ -352,13 +353,6 @@
             this.tbMortgage.Size = new System.Drawing.Size(100, 20);
             this.tbMortgage.TabIndex = 45;
             // 
-            // tbCarIns
-            // 
-            this.tbCarIns.Location = new System.Drawing.Point(77, 30);
-            this.tbCarIns.Name = "tbCarIns";
-            this.tbCarIns.Size = new System.Drawing.Size(100, 20);
-            this.tbCarIns.TabIndex = 44;
-            // 
             // tbTrash
             // 
             this.tbTrash.Location = new System.Drawing.Point(63, 134);
@@ -412,15 +406,6 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Mortgage";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 33);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Car Ins";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -466,6 +451,22 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Electric";
             // 
+            // tbCarIns
+            // 
+            this.tbCarIns.Location = new System.Drawing.Point(77, 30);
+            this.tbCarIns.Name = "tbCarIns";
+            this.tbCarIns.Size = new System.Drawing.Size(100, 20);
+            this.tbCarIns.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Car Ins";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbCarIns);
@@ -509,23 +510,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Income";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.textBox18);
-            this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.label18);
-            this.groupBox5.Controls.Add(this.label19);
-            this.groupBox5.Controls.Add(this.textBox19);
-            this.groupBox5.Controls.Add(this.textBox20);
-            this.groupBox5.Controls.Add(this.textBox21);
-            this.groupBox5.Location = new System.Drawing.Point(479, 150);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 156);
-            this.groupBox5.TabIndex = 50;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Misc Bills";
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -543,11 +527,39 @@
             this.tbIncTotal.Size = new System.Drawing.Size(100, 20);
             this.tbIncTotal.TabIndex = 38;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBox18);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.textBox19);
+            this.groupBox5.Controls.Add(this.textBox20);
+            this.groupBox5.Controls.Add(this.textBox21);
+            this.groupBox5.Location = new System.Drawing.Point(479, 150);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 156);
+            this.groupBox5.TabIndex = 50;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Misc Bills";
+            // 
+            // btnBudget
+            // 
+            this.btnBudget.Location = new System.Drawing.Point(36, 404);
+            this.btnBudget.Name = "btnBudget";
+            this.btnBudget.Size = new System.Drawing.Size(165, 23);
+            this.btnBudget.TabIndex = 51;
+            this.btnBudget.Text = "Calculate Budget";
+            this.btnBudget.UseVisualStyleBackColor = true;
+            this.btnBudget.Click += new System.EventHandler(this.btnBudget_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBudget);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -631,6 +643,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox tbIncTotal;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btnBudget;
     }
 }
 

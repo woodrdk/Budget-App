@@ -28,7 +28,14 @@ namespace Budget_App
         {
 
 
-
+            double elec = Convert.ToInt32(tbElec.Text);
+            double phone = Convert.ToInt32(tbElec.Text);
+            double cable = Convert.ToInt32(tbCable.Text);
+            double water = Convert.ToInt32(tbWater.Text);
+            double trash = Convert.ToInt32(tbTrash.Text);
+            double mort = Convert.ToInt32(tbMortgage.Text);
+            double sewer = Convert.ToInt32(tbSewer.Text);
+            tbHouseTotal.Text = Convert.ToString(elec + phone + cable + water + mort + sewer);
 
 
             if (tbInc1 != null && tbInc2 != null)

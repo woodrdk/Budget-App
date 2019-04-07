@@ -43,8 +43,8 @@
             this.tbMedIns = new System.Windows.Forms.TextBox();
             this.tbCreditTotal = new System.Windows.Forms.TextBox();
             this.tbLifeIns = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbCC1 = new System.Windows.Forms.TextBox();
+            this.tbCC2 = new System.Windows.Forms.TextBox();
             this.tbInc1 = new System.Windows.Forms.TextBox();
             this.tbInc2 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -80,11 +80,19 @@
             this.tbIncTotal = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnBudget = new System.Windows.Forms.Button();
+            this.gbEndResults = new System.Windows.Forms.GroupBox();
+            this.lblTotalLeft = new System.Windows.Forms.Label();
+            this.tbLeftOver = new System.Windows.Forms.TextBox();
+            this.tbIncEnd = new System.Windows.Forms.TextBox();
+            this.lblIncomeEnd = new System.Windows.Forms.Label();
+            this.lblBillsEnd = new System.Windows.Forms.Label();
+            this.tbBillEnd = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.gbEndResults.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -217,19 +225,19 @@
             this.tbLifeIns.Size = new System.Drawing.Size(100, 20);
             this.tbLifeIns.TabIndex = 32;
             // 
-            // textBox14
+            // tbCC1
             // 
-            this.textBox14.Location = new System.Drawing.Point(67, 39);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 33;
+            this.tbCC1.Location = new System.Drawing.Point(67, 39);
+            this.tbCC1.Name = "tbCC1";
+            this.tbCC1.Size = new System.Drawing.Size(100, 20);
+            this.tbCC1.TabIndex = 33;
             // 
-            // textBox15
+            // tbCC2
             // 
-            this.textBox15.Location = new System.Drawing.Point(67, 65);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 34;
+            this.tbCC2.Location = new System.Drawing.Point(67, 65);
+            this.tbCC2.Name = "tbCC2";
+            this.tbCC2.Size = new System.Drawing.Size(100, 20);
+            this.tbCC2.TabIndex = 34;
             // 
             // tbInc1
             // 
@@ -484,10 +492,10 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox15);
+            this.groupBox3.Controls.Add(this.tbCC2);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.tbCC1);
             this.groupBox3.Location = new System.Drawing.Point(219, 165);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(199, 149);
@@ -554,11 +562,76 @@
             this.btnBudget.UseVisualStyleBackColor = true;
             this.btnBudget.Click += new System.EventHandler(this.btnBudget_Click);
             // 
+            // gbEndResults
+            // 
+            this.gbEndResults.Controls.Add(this.lblTotalLeft);
+            this.gbEndResults.Controls.Add(this.tbLeftOver);
+            this.gbEndResults.Controls.Add(this.tbIncEnd);
+            this.gbEndResults.Controls.Add(this.lblIncomeEnd);
+            this.gbEndResults.Controls.Add(this.lblBillsEnd);
+            this.gbEndResults.Controls.Add(this.tbBillEnd);
+            this.gbEndResults.Location = new System.Drawing.Point(479, 323);
+            this.gbEndResults.Name = "gbEndResults";
+            this.gbEndResults.Size = new System.Drawing.Size(182, 114);
+            this.gbEndResults.TabIndex = 50;
+            this.gbEndResults.TabStop = false;
+            this.gbEndResults.Text = "End Results";
+            // 
+            // lblTotalLeft
+            // 
+            this.lblTotalLeft.AutoSize = true;
+            this.lblTotalLeft.Location = new System.Drawing.Point(13, 85);
+            this.lblTotalLeft.Name = "lblTotalLeft";
+            this.lblTotalLeft.Size = new System.Drawing.Size(52, 13);
+            this.lblTotalLeft.TabIndex = 37;
+            this.lblTotalLeft.Text = "Total Left";
+            // 
+            // tbLeftOver
+            // 
+            this.tbLeftOver.Location = new System.Drawing.Point(69, 82);
+            this.tbLeftOver.Name = "tbLeftOver";
+            this.tbLeftOver.ReadOnly = true;
+            this.tbLeftOver.Size = new System.Drawing.Size(100, 20);
+            this.tbLeftOver.TabIndex = 38;
+            // 
+            // tbIncEnd
+            // 
+            this.tbIncEnd.Location = new System.Drawing.Point(69, 19);
+            this.tbIncEnd.Name = "tbIncEnd";
+            this.tbIncEnd.Size = new System.Drawing.Size(100, 20);
+            this.tbIncEnd.TabIndex = 35;
+            // 
+            // lblIncomeEnd
+            // 
+            this.lblIncomeEnd.AutoSize = true;
+            this.lblIncomeEnd.Location = new System.Drawing.Point(13, 22);
+            this.lblIncomeEnd.Name = "lblIncomeEnd";
+            this.lblIncomeEnd.Size = new System.Drawing.Size(42, 13);
+            this.lblIncomeEnd.TabIndex = 13;
+            this.lblIncomeEnd.Text = "Income";
+            // 
+            // lblBillsEnd
+            // 
+            this.lblBillsEnd.AutoSize = true;
+            this.lblBillsEnd.Location = new System.Drawing.Point(13, 48);
+            this.lblBillsEnd.Name = "lblBillsEnd";
+            this.lblBillsEnd.Size = new System.Drawing.Size(25, 13);
+            this.lblBillsEnd.TabIndex = 14;
+            this.lblBillsEnd.Text = "Bills";
+            // 
+            // tbBillEnd
+            // 
+            this.tbBillEnd.Location = new System.Drawing.Point(69, 45);
+            this.tbBillEnd.Name = "tbBillEnd";
+            this.tbBillEnd.Size = new System.Drawing.Size(100, 20);
+            this.tbBillEnd.TabIndex = 36;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gbEndResults);
             this.Controls.Add(this.btnBudget);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -585,6 +658,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.gbEndResults.ResumeLayout(false);
+            this.gbEndResults.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,8 +682,8 @@
         private System.Windows.Forms.TextBox tbMedIns;
         private System.Windows.Forms.TextBox tbCreditTotal;
         private System.Windows.Forms.TextBox tbLifeIns;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tbCC1;
+        private System.Windows.Forms.TextBox tbCC2;
         private System.Windows.Forms.TextBox tbInc1;
         private System.Windows.Forms.TextBox tbInc2;
         private System.Windows.Forms.TextBox textBox18;
@@ -644,6 +719,13 @@
         private System.Windows.Forms.TextBox tbIncTotal;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnBudget;
+        private System.Windows.Forms.GroupBox gbEndResults;
+        private System.Windows.Forms.Label lblTotalLeft;
+        private System.Windows.Forms.TextBox tbLeftOver;
+        private System.Windows.Forms.TextBox tbIncEnd;
+        private System.Windows.Forms.Label lblIncomeEnd;
+        private System.Windows.Forms.Label lblBillsEnd;
+        private System.Windows.Forms.TextBox tbBillEnd;
     }
 }
 
